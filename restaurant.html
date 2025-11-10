@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Imperial Dreams Restauracja</title>
+	</head>
+	<body>
+		<div class="preloader" id="preloader">
+			<div class="loader"></div>
+			<p class="loader__text">Imperial Dreams</p>
+		</div>
+
+		<nav class="nav">
+			<div class="nav__box wrapper">
+				<div class="nav__logo">
+					<a href="#">Imperial<span>Dreams</span></a>
+				</div>
+				<div class="nav__burger"><i class="fas fa-bars"></i></div>
+
+				<ul class="nav__desktop">
+					<li class="nav__item"><a href="index.html">Home</a></li>
+					<li class="nav__item"><a href="index.html#about">O nas</a></li>
+					<li class="nav__item"><a href="index.html#rooms">Pokoje</a></li>
+					<li class="nav__item"><a href="index.html#spa">Spa</a></li>
+					<li class="nav__item"><a href="index.html#contact">Kontakt</a></li>
+				</ul>
+			</div>
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html">Home</a></li>
+				<li class="nav__item"><a href="index.html#about">O nas</a></li>
+				<li class="nav__item"><a href="index.html#rooms">Pokoje</a></li>
+				<li class="nav__item"><a href="index.html#spa">Spa</a></li>
+				<li class="nav__item"><a href="index.html#contact">Kontakt</a></li>
+			</ul>
+		</nav>
+		<header class="restaurant-header">
+			<div class="restaurant-header__box wrapper">
+				<div data-aos="flip-left" class="restaurant-header__textbox">
+					<h1 class="restaurant-header__heading">
+						Restauracja <span>Imperial Dreams</span>
+					</h1>
+					<p class="restaurant-header__text">
+						Posmakuj najgłębszych rozkoszy świata
+					</p>
+				</div>
+				<img
+					data-aos="flip-right"
+					data-aos-delay="300"
+					src="./img/restaurant-4.jpg"
+					alt="Szef kuchni"
+				/>
+			</div>
+			<div class="restaurant-header__bg"></div>
+		</header>
+
+		<main>
+			<section class="meals">
+				<h2 class="section-title">U nas zjesz</h2>
+				<div data-aos="flip-up" class="meals__box wrapper">
+					<div class="meals__card meals__card--one">
+						<div class="meals__text">
+							<p>Na słodko</p>
+						</div>
+					</div>
+
+					<div class="meals__card meals__card--two">
+						<div class="meals__text">
+							<p>Na słono</p>
+						</div>
+					</div>
+
+					<div class="meals__card meals__card--three">
+						<div class="meals__text">
+							<p>Street Food</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="benefits">
+				<div class="benefits__container wrapper">
+					<div class="benefits__box">
+						<i class="fa-solid fa-utensils"></i>
+						<p>Przepyszne dania</p>
+					</div>
+					<div class="benefits__box">
+						<i class="fa-solid fa-stroopwafel"></i>
+						<p>Znakomite Desery</p>
+					</div>
+					<div class="benefits__box">
+						<i class="fa-solid fa-gem"></i>
+						<p>Niezwyłe doznania</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<p>&copy;<span class="footer__year"></span>Imperial Dreams</p>
+		</footer>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

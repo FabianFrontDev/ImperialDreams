@@ -1,0 +1,55 @@
+@use './colors' as *;
+
+@mixin btn($bg, $color, $hover-bg: null, $hover-color: null, $animation: null) {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: $bg;
+	color: $color;
+	transition: background-color 0.3s, color 0.3s;
+
+	@if $animation != null {
+		animation: $animation;
+	}
+
+	&:hover {
+		@if $hover-bg != null {
+			background-color: $hover-bg;
+		}
+		@if $hover-color != null {
+			color: $hover-color;
+		}
+	}
+}
+
+@mixin flex-center($direction: row) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+@mixin section-title(
+	$before-color: $color-secondary,
+	$before-width: 50%,
+	$before-height: 4px,
+	$before-position: bottom
+) {
+	position: relative;
+	width: auto;
+	padding: 20px 0;
+	font-weight: 400;
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'Playfair', sans-serif;
+
+	&::before {
+		position: absolute;
+		bottom: if($before-position == bottom, 5px, auto);
+		top: if($before-position == top, 5px, auto);
+		left: 0;
+		width: $before-width;
+		height: $before-height;
+		background-color: $before-color;
+		content: '';
+	}
+}

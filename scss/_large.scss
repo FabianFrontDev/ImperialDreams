@@ -1,0 +1,33 @@
+@use './colors' as *;
+@use './mixin' as *;
+
+@media (min-width: 992px) {
+	.section-title {
+		font-size: 4.8rem;
+	}
+
+	.header {
+		&__heading {
+			font-size: 10rem;
+		}
+	}
+
+	// PAGES RESTAURANT
+
+	.restaurant-header {
+		&__heading {
+			font-size: 6.5rem;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		&__text {
+			p {
+				font-size: 2.2rem;
+			}
+		}
+	}
+}

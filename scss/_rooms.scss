@@ -1,0 +1,79 @@
+@use './colors' as *;
+@use './mixin' as *;
+// ROOMS
+.section-rooms {
+	margin-top: 40px;
+	padding: 60px 20px;
+	background-color: rgba(89, 131, 252, 1);
+	background-image: linear-gradient(
+		90deg,
+		rgba(89, 131, 252, 1) 0%,
+		rgba(41, 53, 86, 1) 100%
+	);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__title {
+		font-size: 3rem;
+		text-transform: uppercase;
+		color: $color-secondary;
+		margin-bottom: 30px;
+	}
+
+	&__form {
+		background: white;
+		color: $color-primary;
+		padding: 40px;
+		border-radius: 20px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		width: 100%;
+		max-width: 500px;
+
+		.form__group {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+
+			label {
+				font-weight: 600;
+				margin-bottom: 8px;
+			}
+
+			input,
+			select {
+				padding: 20px;
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				font-size: 1.6rem;
+			}
+
+			p {
+				font-weight: bold;
+				font-size: 2rem;
+			}
+		}
+
+		.form__dates {
+			display: flex;
+			justify-content: space-between;
+			gap: 10px;
+		}
+	}
+
+	.btn--gold {
+		background-color: $color-secondary;
+		color: white;
+		padding: 15px 40px;
+		border: none;
+		border-radius: 10px;
+		font-weight: 600;
+		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: darken($color-secondary, 10%);
+		}
+	}
+}
