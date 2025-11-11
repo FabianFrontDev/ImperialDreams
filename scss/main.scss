@@ -151,6 +151,7 @@ a {
 
 		&--active {
 			left: 0;
+			overflow:hidden;
 		}
 	}
 
@@ -706,3 +707,4 @@ a {
 @import './small';
 @import './medium';
 @import './large';
+
